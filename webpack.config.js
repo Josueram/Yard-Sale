@@ -1,12 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const historyApiFallback = require('connect-history-api-fallback');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   mode : 'development',
   resolve: {
@@ -54,5 +56,6 @@ module.exports = {
     },
     compress: true,
     port: 3005,
+    historyApiFallback: true,
   }
 }
