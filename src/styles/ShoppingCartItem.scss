@@ -1,0 +1,24 @@
+@use 'vars';
+
+.ShoppingCartItem {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+}
+.ShoppingCartItem figure {
+  margin: 8px;
+}
+.ShoppingCartItem img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.ShoppingCartItem p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.ShoppingCartItem p:nth-child(3) {
+  font-size: var(--md);
+  font-weight: bold;
+}
