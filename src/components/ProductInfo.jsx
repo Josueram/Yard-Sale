@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/ProductInfo.scss';
 
+import addToCart from '@icons/bt_add_to_cart.svg';
+
 const ProductInfo = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const ProductInfo = () => {
         <p>Bike</p>
         <p>With the vintage urban bike you will be able to move everywhere easily and with the unique style with which it is made. It has practical accessories of excellent quality</p>
         <button className="primary-button add-to-cart-button">
-          <img src="./assets/YardSale_Icons/bt_add_to_cart.svg" alt="added to cart icon" />
+          <img src={addToCart} alt="added to cart icon" />
           Add to cart
         </button>
       </div>
