@@ -12,6 +12,7 @@ nav {
 .nav-logo {
   width: 100px;
   margin-right: 24px;
+  cursor: pointer;
 }
 .navbar-left {
   display: flex;
@@ -39,11 +40,13 @@ nav {
   border: 1px solid var(--hospital-green);
 }
 .navbar-email {
+  cursor: pointer;
   margin-right: 12px;
   font-size: var(--sm);
   color: var(--very-light-pink);
 }
 .navbar-shopping-cart {
+  cursor: pointer;
   position: relative;
 }
 .navbar-shopping-cart div {
