@@ -4,8 +4,12 @@
   width: 100px;
   height: auto;
   padding: 20px 20px 0px 20px;
+  background-color: var(--white);
   border: 1px solid var(--very-light-pink);
   border-radius: 6px;
+  position: absolute;
+	top: 60px;
+	right: 50px;
 }
 .Menu ul {
   list-style: none;

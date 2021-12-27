@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/SendEmail.scss';
-
+import '@styles/SendEmail.scss';
 import logo from '@logos/logo_yard_sale.svg';
 import email from '@icons/email.svg';
 
@@ -15,10 +14,12 @@ const SendEmail = () => {
           <img src={email} alt="email" />
         </div>
         <input type="submit" value="Login" className="primary-button login-button" />
-        <p className="resend"><span>Didn't receive the email? </span><a href="#">Resend</a></p>
+        <p className="resend">
+          <span>Didn't receive the email? </span>
+          <a href="#">Resend</a>
+        </p>
       </div>
     </div>
-
   );
 }
 

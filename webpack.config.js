@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const historyApiFallback = require('connect-history-api-fallback');
 
 module.exports = {
   entry: './src/index.js',
@@ -17,6 +16,7 @@ module.exports = {
       '@components': path.resolve(__dirname, 'src/components/'),
       '@containers': path.resolve(__dirname, 'src/containers/'),
       '@pages': path.resolve(__dirname, 'src/pages/'),
+      '@routes': path.resolve(__dirname, 'src/routes'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
       '@icons': path.resolve(__dirname, 'src/assets/icons/'),
       '@logos': path.resolve(__dirname, 'src/assets/logos/'),
@@ -54,20 +54,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
-    }),
-  ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
-    compress: true,
-    port: 3005,
-    historyApiFallback: true,
-  }
+		new HtmlWebpackPlugin({
+			template: './public/index.html',
+			filename: './index.html'
+		}),
+		new MiniCssExtractPlugin({
+			filename: '[name].css'
+		}),
+	],
+	devServer: {
+		historyApiFallback: true,
+	}
 }

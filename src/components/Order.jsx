@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/Order.scss';
-
+import '@styles/Order.scss';
 import goBack from '@icons/flechita.svg';
 
 const Order = () => {
