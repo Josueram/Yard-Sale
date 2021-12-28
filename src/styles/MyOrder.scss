@@ -6,11 +6,19 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
+	background-color: white;
+	top: 60px;
+	bottom: auto;
+	border-radius: 6px;
+	border: 1px solid var(--very-light-pink);
 }
 .title-container {
 	display: flex;
+  height: 60px;
+  margin-bottom: 20px;
 }
 .title-container img {
+  width: 10px;
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
